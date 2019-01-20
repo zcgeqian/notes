@@ -41,4 +41,30 @@ sudo apt install git
 
 ## git cheat sheet
 
-![](/images/git_cheat.jpg)
+![](https://github.com/zcgeqian/notes/raw/master/images/git_cheat.jpg)
+
+
+
+## git 目录权限问题
+
+在使用git相关命令进行项目管理时，发现“权限不足”的报错问题，查找后发现部分文件和文件夹的用户和组为root用户，使用chmod命令更改文件夹的用户和组为当前用户和组即可：
+
+`chmod -R 用户名:用户组名 foldername `
+
+其中，`－Ｒ`表示递归的完成
+
+
+
+## git 分支相关操作
+
+* 创建并切换到指定分支
+
+  `git checkout -b dev`
+
+  该命令相当于执行了：
+
+  `git branch dev`
+
+  `git checkout dev`
+
+* 删除
