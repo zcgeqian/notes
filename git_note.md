@@ -63,8 +63,16 @@ sudo apt install git
 
   该命令相当于执行了：
 
-  `git branch dev`
+  `git branch dev`  //创建分支
 
-  `git checkout dev`
+  `git checkout dev`　//切换分支
 
-* 删除
+* 合并和删除分支
+
+  将其他分支的修改更新到主分支上使用命令，合并前需先切换到主分支：
+
+  `git merge dev`
+
+  删除`dev`分支：
+
+  `git branch -d dev`
