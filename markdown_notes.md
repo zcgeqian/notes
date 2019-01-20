@@ -8,7 +8,7 @@
 
 ## Typora编辑器安装步骤(Ubuntu)--来自Typora官网
 
-我现在使用的markdown编辑器为Typora，Ubuntu版本
+我现在使用的markdown编辑器为Typora，Ubuntu版本安装：
 
 ```shell
 # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
@@ -135,3 +135,10 @@ Drawable drawable = ivSystem.getDrawable();//java
 | \_\_\_斜粗体2___             | ___斜粗体2___           |
 | \*\*\*\~\~斜粗体删除线1~~*** | ***~~斜粗体删除线1~~*** |
 | \~\~\*\*\*斜粗体删除线2***~~ | ~~***斜粗体删除线2***~~ |
+
+### 引用
+
+大于号即是引用的标识，在前方插入
+
+> 这里都是引用的内容
+
