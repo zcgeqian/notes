@@ -1,5 +1,34 @@
+# markdown notes
+
+[本文内容来源]( https://blog.csdn.net/rain_9155/article/details/82731732)  : https://blog.csdn.net/rain_9155/article/details/82731732 
+
+感谢大神的总结，这里直接拿来主义了，放在这里方便查阅和快速编辑文档。
+
+
+
+## Typora编辑器安装步骤(Ubuntu)--来自Typora官网
+
+我现在使用的markdown编辑器为Typora，Ubuntu版本
+
+```shell
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+# add Typora's repository
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+# install typora
+sudo apt-get install typora
+```
+
+**初次启动Typora时，出现了不能使用搜狗输入法的情况，多次尝试后发现不是输入法的问题，重启Typora后正常**
+
+
+
+
+
 markdown一级标题（0个数以上的=）
 ====
+
 二级标题(0个数以上的-) 
 ----
 # 一级标题
@@ -18,11 +47,13 @@ ___
 ### 换行
 直接回车不能换行 <br> 
 要使用 \<br> 或 \<\br> <br>
+
 ### 普通URL
 超连接直接写URL：https://github.com/13660139155/SVGTest <br>
 ### 单行文字空格
  单行文字首个空格都会被忽略 <br>
  如果想要显示首行空格，把输入法的半角改成全角输入 <br>
+
 ### 单行文字显示
     单行文本显示，在首行加入俩个tab键或四个空格 <br>
 ### 多行文字显示
@@ -34,6 +65,7 @@ ___
 ### 文字链接
 给一段文字加入超链接的格式：[Github地址](https://github.com/13660139155/SVGTest) <br>
 给一段文字加入超链接的格式,你还可以给他加上一个鼠标悬停显示的文本（把鼠标放在文字链家上会有文字悬停提示）: [Github地址](https://github.com/13660139155/SVGTest "悬停显示")，即在URL之后 用双引号括起来一个字符串 <br>
+
 ### 圆点符分级
 * 一级圆点号 ，markdown中用 星号 + 空格 表示，不加空格则为普通星号， *普通星号 <br>
   * 二级圆点号，tab + 星号 + 空格 表示
@@ -65,6 +97,7 @@ ___
 \[](图片URL)
 (图片的超链接)
 [![baidu](http://www.baidu.com/img/bdlogo.gif)](http://www.baidu.com)
+
 * 文字悬停，第一种方式 <br>
   [![baidu](http://www.baidu.com/img/bdlogo.gif "baidu")](http://www.baidu.com)
 * 文字悬停，第二种方式 <br>

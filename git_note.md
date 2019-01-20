@@ -39,3 +39,6 @@ sudo apt install git
 
 
 
+## git cheat sheet
+
+![](/images/git_cheat.jpg)
