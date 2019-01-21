@@ -13,6 +13,11 @@ sudo apt install git
   ```bash
   git config --global user.name "yourname"              # 替换为GitHub用户名
   git config --global user.email youremail@XXX.com      # 替换为GitHub的注册邮箱
+  
+  #####
+  git config --list									  # 查看配置信息
+  git config user.name								  # 查看已经配置的用户名
+  git config user.email								  # 查看已经配置的邮箱
   ```
 
 * 生成key
@@ -76,3 +81,4 @@ sudo apt install git
   删除`dev`分支：
 
   `git branch -d dev`
+
