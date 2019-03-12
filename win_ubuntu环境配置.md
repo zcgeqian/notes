@@ -112,4 +112,9 @@ U盘启动后选择install Ubuntu的选项，语言这里选择了简体中文�
 * 之后安装cuda的话，推荐不要使用系统设置->附加驱动那里选择NVIDIA的驱动，因为后期安装cuda过程中有坑。这里系统提供的驱动和cuda对应版本的驱动并不一定一直，会导致pytorch和TensorFlow不能正常配置gpu，**推荐使用cuda安装包中自带的NVIDIA驱动，这个版本驱动和cuda一定是配套的**
 * 修改grub2启动顺序：`sudo vim /boot/grub/grub.cfg` ，找到`set default='0'`，将0改成启动界面的第N-1个即默认启动顺序为的N个
 * 修改grub2等待时间，默认为10秒钟，`vim /etc/default/grub`，修改`grub_timeout=10`中的10为想要的数值，单位为秒，保存退出后执行：`update-grub`
+* 设置开机自动挂载分区：
+
+  1. 创建要挂载的目录：`mkdir ~/windir`
+  2. 查找要挂载分区的UUID：`sudo blkid`，记录要挂载盘的UUID和TYPE，windows下磁盘TYPE一般为“ntfs”
+  3. 编辑`/etc/fstab`文件，按照格式增加一行，格式规则为：`UUID  挂载目录  分区类型 defaults 0 0`
 
