@@ -93,3 +93,15 @@ sudo apt install git
 * 拉取远程仓库： `git pull [remoteName] [localBranchName]`
 * 
 
+
+
+##  fork后项目与源地址同步
+
+使用命令：
+
+* 查看远程仓库`git remote -v`
+* 添加远程仓库`git remote add upstream git@github.com:xxx/xxx.git`
+* 从源仓库更新同步代码`git fetch upstream`
+* 合并到本地代码`git merge upstream/master`
+* 推送到自己的远程仓库`git push`
+
