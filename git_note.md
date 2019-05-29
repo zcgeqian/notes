@@ -104,3 +104,10 @@ sudo apt install git
 * 合并到本地代码`git merge upstream/master`
 * 推送到自己的远程仓库`git push`
 * 删除远程仓库`git remote remove upstream`
+
+
+
+## 已经add后，git reset --hard丢失的文件找回
+
+* 执行`git fsck --lost-found`
+* 在`.git/lost-found`目录下寻找丢失的文件
