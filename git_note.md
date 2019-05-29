@@ -91,7 +91,6 @@ sudo apt install git
 * 检出仓库：`git clone rep_name`
 * 查看远程仓库：`git remote -v`
 * 拉取远程仓库： `git pull [remoteName] [localBranchName]`
-* 
 
 
 
