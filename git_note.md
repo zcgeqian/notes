@@ -111,3 +111,10 @@ sudo apt install git
 
 * 执行`git fsck --lost-found`
 * 在`.git/lost-found`目录下寻找丢失的文件
+
+
+## 推送到自己的gitlab服务器地址
+* 备份之前的远程仓库：`git remote rename origin old-origin`或者删除`git remote remove origin`
+* 查看是否更改名称或者删除成功：`git remote -v`
+* 添加自己的gitlab远程仓库：`git remote add origin ....`
+* 推送 `git push -u origin --all`
